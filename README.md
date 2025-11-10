@@ -1,235 +1,257 @@
-# Llanos Auditores - Plantilla Web
+# Llanos Auditores - Website Template
 
-Esta es una plantilla web profesional para Llanos Auditores, basada en el diseño y estructura de ProData Servicios, adaptada específicamente para servicios de auditoría y consultoría contable.
+Una plantilla web profesional basada en el diseño de Contawork Consultores, adaptada para "Llanos Auditores". Incluye diseño responsivo moderno, animaciones interactivas y funcionalidades completas para un sitio web de servicios contables y tributarios.
 
-## 🚀 Características
+## 🚀 Características Principales
 
-- **Diseño Responsivo**: Compatible con dispositivos móviles, tablets y escritorio
-- **Animaciones Suaves**: Efectos de transición y animaciones CSS/JavaScript
-- **Formulario de Contacto**: Sistema de contacto funcional con validación
-- **Secciones Optimizadas**: Estructura clara para servicios de auditoría
-- **SEO Friendly**: Código optimizado para motores de búsqueda
+### ✨ Diseño y Experiencia de Usuario
+- **Diseño Responsivo**: Adaptación perfecta a dispositivos móviles, tablets y desktop
+- **Animaciones Suaves**: Efectos de desplazamiento y transiciones elegantes
+- **Tipografía Moderna**: Fuente Montserrat para una apariencia profesional
+- **Navegación Intuitiva**: Menú fijo con efectos de scroll y navegación suave
+- **Colores Profesionales**: Paleta de colores azul profesional con acentos dorados
 
-## 📁 Estructura del Proyecto
+### 📋 Secciones Incluidas
+1. **Header/Navegación**: Menú fijo con logo y navegación responsiva
+2. **Hero Section**: Sección principal con animación de texto dinámico
+3. **Servicios**: Tarjetas interactivas con efecto flip 3D
+4. **Sobre Nosotros**: Información de la empresa con imágenes y badges
+5. **Planes**: Cuatro opciones de planes con precios y características
+6. **Beneficios**: Lista de ventajas con iconos y descripciones
+7. **Contacto**: Formulario funcional con validación
+8. **Testimonios**: Carrusel de testimonios de clientes
+9. **FAQ**: Preguntas frecuentes con acordeón
+10. **Footer**: Enlaces sociales y información de contacto
+
+### 🛠️ Funcionalidades Técnicas
+- **Formulario de Contacto**: Validación completa y notificaciones
+- **Animación de Texto**: Efecto de escritura automática en el hero
+- **Carrusel de Testimonios**: Navegación automática y manual
+- **Scroll Animations**: Elementos aparecen al hacer scroll
+- **Validación de Formularios**: Verificación en tiempo real
+- **Navegación Suave**: Scroll suave entre secciones
+- **Optimización de Performance**: Carga lazy de imágenes
+
+## 📁 Estructura de Archivos
 
 ```
 llanosauditores/
-├── index.html          # Página principal
+├── index.html          # Archivo principal HTML
 ├── styles.css          # Estilos CSS personalizados
-├── script.js           # JavaScript funcional
-├── assets/             # Carpeta para imágenes y recursos
-│   ├── logo.svg
-│   ├── hero-audit.jpg
-│   ├── client-1.png
-│   ├── case-1.jpg
-│   └── ...
-└── README.md           # Este archivo
+├── script.js           # JavaScript interactivo
+├── README.md           # Este archivo
+└── assets/             # Carpeta de recursos (crear)
+    ├── logo-llanos-auditores.png
+    ├── logo-llanos-auditores-white.png
+    ├── hero-auditores.png
+    ├── hero-background.jpg
+    ├── about-team.png
+    ├── badge-quality.png
+    ├── icon-contable.png
+    ├── icon-tributaria.png
+    ├── icon-remuneraciones.png
+    ├── icon-auditoria.png
+    ├── testimonial-1.png
+    └── testimonial-2.png
 ```
 
-## 🎨 Secciones Incluidas
+## 🎨 Personalización
 
-### 1. **Header/Navegación**
-- Logo y menú de navegación
-- Links a servicios, industrias, blog y contacto
-- Botón de llamada a la acción
-
-### 2. **Hero Section**
-- Mensaje principal de valor
-- Descripción de servicios
-- Botón para agendar consulta
-- Imagen representativa
-
-### 3. **Logos de Clientes**
-- Sección para mostrar empresas que confían en los servicios
-- Efectos hover y animaciones
-
-### 4. **Nuestro Modelo**
-- Metodología de trabajo
-- Beneficios para el cliente
-- Iconos representativos del servicio
-
-### 5. **Servicios**
-- **Auditoría Externa**: Auditorías independientes
-- **Auditoría Interna**: Evaluación de controles internos
-- **Consultoría Tributaria**: Planificación y cumplimiento fiscal
-- **Asesoría Contable**: Servicios contables integrales
-
-### 6. **Industrias**
-- Tabs dinámicos por sector
-- Casos de éxito por industria
-- Testimonios de clientes
-
-### 7. **Testimonios**
-- Carousel con testimonios reales
-- Navegación automática y manual
-
-### 8. **Llamada a la Acción**
-- Sección para conversión
-- Botón prominente de contacto
-
-### 9. **Demostración/Consulta**
-- Información sobre consulta gratuita
-- Imagen y descripción del proceso
-
-### 10. **Contacto**
-- Formulario funcional
-- Información de contacto
-- Mapa (ubicación)
-- Enlaces a redes sociales
-
-### 11. **Footer**
-- Información de la empresa
-- Enlaces adicionales
-- Derechos de autor
-
-## 🛠️ Tecnologías Utilizadas
-
-- **HTML5**: Estructura semántica
-- **CSS3**: Estilos modernos con variables CSS y animaciones
-- **JavaScript ES6+**: Funcionalidad interactiva
-- **Bootstrap 5.3.2**: Framework CSS responsivo
-- **Font Awesome 6.4.0**: Iconografía
-
-## 🎨 Paleta de Colores
-
+### Colores Principales
 ```css
 :root {
-    --primary-color: #1e3a5f;      /* Azul oscuro profesional */
-    --secondary-color: #4a90a4;    /* Azul medio */
-    --accent-color: #f39c12;       /* Naranja/amarillo */
-    --success-color: #27ae60;      /* Verde */
-    --light-gray: #f8f9fa;         /* Gris claro */
-    --dark-gray: #2c3e50;          /* Gris oscuro */
+    --primary-color: #1e40af;      /* Azul principal */
+    --secondary-color: #3b82f6;    /* Azul secundario */
+    --accent-color: #f59e0b;       /* Dorado de acento */
+    --success-color: #10b981;      /* Verde de éxito */
+    --dark-color: #1f2937;         /* Gris oscuro */
 }
 ```
 
-## 📱 Responsive Design
+### Tipografía
+- **Fuente Principal**: Montserrat (Google Fonts)
+- **Pesos disponibles**: 300, 400, 500, 600, 700
 
-- **Mobile First**: Diseño optimizado para móviles
-- **Breakpoints**: 576px, 768px, 992px, 1200px
-- **Grid System**: Bootstrap grid para layouts flexibles
+### Modificar Contenido
 
-## ⚡ Funcionalidades JavaScript
-
-### Navegación
-- Scroll suave entre secciones
-- Navbar con efecto de transparencia al hacer scroll
-- Menú móvil colapsible
-
-### Animaciones
-- Animaciones de entrada al hacer scroll
-- Efectos hover en tarjetas y botones
-- Transiciones suaves
-
-### Formularios
-- Validación en tiempo real
-- Notificaciones de éxito/error
-- Prevención de spam básica
-
-### Interactividad
-- Carousel automático de testimonios
-- Tabs dinámicos para industrias
-- Lazy loading de imágenes
-
-## 🖼️ Imágenes Necesarias
-
-Para completar la plantilla, necesitarás agregar las siguientes imágenes en la carpeta `assets/`:
-
-### Logotipos y Branding
-- `logo.svg` - Logo principal de Llanos Auditores
-- `favicon.ico` - Icono del navegador
-
-### Imágenes de Hero
-- `hero-audit.jpg` (1200x800px) - Imagen principal de auditoría
-
-### Logos de Clientes
-- `client-1.png` a `client-5.png` (300x150px) - Logos de empresas cliente
-
-### Casos de Éxito
-- `case-1.jpg` a `case-3.jpg` (400x300px) - Imágenes de casos de éxito
-
-### Otras
-- `demo-image.jpg` (600x400px) - Imagen para sección de demo
-- `team-photo.jpg` (800x600px) - Foto del equipo (opcional)
-
-## 🚀 Instalación y Uso
-
-1. **Clonar o descargar** los archivos en tu servidor web
-2. **Agregar imágenes** en la carpeta `assets/`
-3. **Personalizar contenido** en `index.html`:
-   - Cambiar textos por información real de la empresa
-   - Actualizar información de contacto
-   - Modificar testimonios con casos reales
-4. **Ajustar estilos** en `styles.css` si es necesario
-5. **Configurar formulario** para envío real de emails
-
-## 🔧 Personalización
-
-### Cambiar Colores
-Modifica las variables CSS en `styles.css`:
-
-```css
-:root {
-    --primary-color: #tu-color-principal;
-    --accent-color: #tu-color-acento;
-}
+#### 1. Cambiar Información de Contacto
+En `index.html`, busca la sección de contacto:
+```html
+<h5>contacto@llanosauditores.cl</h5>
+<h5>+569 1234 5678</h5>
+<h5>Av. Providencia 123, Of. 456, Santiago - Chile</h5>
 ```
 
-### Añadir Nuevos Servicios
-1. Duplicar una tarjeta de servicio en el HTML
-2. Actualizar contenido y enlaces
-3. Agregar estilos específicos si es necesario
+#### 2. Personalizar Planes
+Modifica los precios y características en la sección `#planes`:
+```html
+<div class="plan-price">$30.000<span>/mes</span></div>
+```
 
-### Modificar Formulario
-1. Actualizar campos en el HTML
-2. Ajustar validación en `script.js`
-3. Configurar backend para procesamiento
+#### 3. Actualizar Servicios
+Cambia los iconos y descripciones en la sección de servicios.
 
-## 📊 SEO y Performance
+#### 4. Modificar Testimonios
+Actualiza los testimonios de clientes en la sección correspondiente.
 
-### Optimizaciones Incluidas
-- Meta tags apropiados
+## 🔧 Instalación y Uso
+
+### Requisitos
+- Navegador web moderno
+- Editor de código (VS Code recomendado)
+- Servidor web local (opcional para desarrollo)
+
+### Pasos de Instalación
+
+1. **Crear carpeta de proyecto**
+   ```bash
+   mkdir llanos-auditores
+   cd llanos-auditores
+   ```
+
+2. **Crear estructura de archivos**
+   - Copia los archivos HTML, CSS y JS
+   - Crea la carpeta `assets/`
+
+3. **Añadir imágenes**
+   - Añade todas las imágenes listadas en la estructura
+   - Asegúrate de que coincidan con las rutas en el código
+
+4. **Abrir en navegador**
+   - Abre `index.html` directamente en el navegador
+   - O usa un servidor local como Live Server
+
+### Servidor Local (Recomendado)
+```bash
+# Con Python 3
+python -m http.server 8000
+
+# Con Node.js (si tienes live-server instalado)
+npx live-server
+
+# Con PHP
+php -S localhost:8000
+```
+
+## 📱 Responsividad
+
+### Breakpoints
+- **Mobile**: < 576px
+- **Tablet**: 576px - 768px
+- **Desktop**: > 768px
+
+### Características Responsivas
+- Navegación móvil con hamburger menu
+- Reorganización de contenido en tablets
+- Optimización de imágenes para móviles
+- Formularios adaptados a pantallas táctiles
+
+## ⚡ Optimización y Performance
+
+### Técnicas Implementadas
+- **Lazy Loading**: Carga diferida de imágenes
+- **CSS Minificación**: Estilos optimizados
+- **JavaScript Eficiente**: Código optimizado y sin dependencias pesadas
+- **Imágenes Optimizadas**: Uso de formatos modernos recomendado
+- **Caching**: Headers de cache recomendados
+
+### Recomendaciones Adicionales
+```html
+<!-- Preload critical resources -->
+<link rel="preload" href="assets/logo.png" as="image">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat" as="style">
+
+<!-- Enable compression -->
+<meta http-equiv="Content-Encoding" content="gzip">
+```
+
+## 🌐 SEO y Accesibilidad
+
+### SEO Implementado
+- Meta tags optimizados
 - Estructura semántica HTML5
-- Imágenes con alt text
-- Schema markup (a implementar)
-- Lazy loading de imágenes
-- CSS y JS minificados (recomendado para producción)
+- URLs amigables con anclas
+- Heading hierarchy correcta
+- Alt text en imágenes
 
-### Mejoras Recomendadas
-- Implementar Schema.org markup
-- Optimizar tamaño de imágenes (WebP)
-- Configurar cache del navegador
-- Implementar Service Worker para PWA
+### Accesibilidad
+- Contraste adecuado de colores
+- Navegación por teclado
+- ARIA labels donde necesario
+- Formularios accesibles
+- Texto alternativo en imágenes
 
-## 🔒 Seguridad
+### Meta Tags Recomendados
+```html
+<meta name="description" content="Llanos Auditores - Expertos en servicios contables y tributarios en Chile">
+<meta name="keywords" content="contabilidad, tributaria, auditoria, chile, servicios contables">
+<meta property="og:title" content="Llanos Auditores - Expertos Contables & Tributarios">
+<meta property="og:description" content="Servicios profesionales de contabilidad y asesoría tributaria">
+<meta property="og:image" content="assets/og-image.jpg">
+```
 
-### Consideraciones
-- Validación de formularios tanto en frontend como backend
-- Sanitización de inputs
-- Protección CSRF en formularios
-- HTTPS obligatorio para producción
+## 🚦 Testing y Validación
 
-## 📞 Información de Contacto por Actualizar
+### Lista de Verificación
+- [ ] Todas las imágenes cargan correctamente
+- [ ] Formulario de contacto funciona
+- [ ] Navegación responsive funciona
+- [ ] Animaciones se ejecutan suavemente
+- [ ] Enlaces internos funcionan
+- [ ] Velocidad de carga < 3 segundos
+- [ ] Compatible con Chrome, Firefox, Safari, Edge
 
-Recuerda actualizar toda la información de contacto en el HTML:
+### Herramientas de Testing
+- **Google PageSpeed Insights**: Performance
+- **GTmetrix**: Optimización
+- **W3C Validator**: HTML válido
+- **WAVE**: Accesibilidad
 
-- **Teléfono**: Cambiar `+56 2 2664 1300`
-- **Email**: Cambiar `info@llanosauditores.cl`
-- **Dirección**: Actualizar dirección real
-- **Redes Sociales**: Agregar enlaces reales
+## 🔄 Mantenimiento
 
-## 🎯 Próximos Pasos
+### Actualizaciones Regulares
+1. **Contenido**: Actualizar testimonios y casos de éxito
+2. **Imágenes**: Renovar fotos del equipo y oficinas
+3. **Precios**: Mantener planes actualizados
+4. **SEO**: Revisar y optimizar contenido
 
-1. **Contenido Real**: Reemplazar todo el contenido placeholder
-2. **Imágenes Profesionales**: Agregar fotografías de calidad
-3. **Backend**: Implementar procesamiento de formularios
-4. **Analytics**: Integrar Google Analytics
-5. **Testing**: Probar en diferentes dispositivos y navegadores
+### Backup y Versionado
+- Usar Git para control de versiones
+- Backup regular de archivos
+- Documentar cambios importantes
+
+## 🤝 Soporte y Contribuciones
+
+### Reportar Problemas
+Si encuentras algún error o tienes sugerencias:
+1. Documenta el problema detalladamente
+2. Incluye capturas de pantalla si es necesario
+3. Especifica navegador y sistema operativo
+
+### Mejoras Futuras
+- [ ] Integración con CRM
+- [ ] Blog/Noticias section
+- [ ] Chat en vivo
+- [ ] Calculadora de impuestos
+- [ ] Portal de clientes
+- [ ] Sistema de citas online
 
 ## 📄 Licencia
 
-Esta plantilla está basada en el diseño de ProData Servicios y adaptada para Llanos Auditores. El código es de uso libre para el proyecto especificado.
+Este template está basado en el diseño de Contawork Consultores y está adaptado para uso educativo y comercial. Asegúrate de:
+
+- Reemplazar todas las imágenes con contenido propio
+- Actualizar toda la información de contacto
+- Personalizar el contenido según tu empresa
+- Verificar compatibilidad con regulaciones locales
+
+## 📞 Contacto de Desarrollo
+
+Para soporte técnico o modificaciones adicionales del template, puedes contactar al desarrollador.
 
 ---
 
-**Desarrollado para Llanos Auditores - 2024**
+**Versión**: 1.0.0  
+**Última actualización**: Noviembre 2024  
+**Compatible con**: HTML5, CSS3, ES6+  
+**Dependencias**: Bootstrap 5.3.2, Font Awesome 6.4.0

@@ -1,187 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Llanos Auditores - Servicios de Auditoría Profesional</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Llanos Auditores - Expertos Contables & Tributarios</title>
+    
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/logo.svg" alt="Llanos Auditores" height="40">
-                <span class="ms-2 fw-bold text-primary">Llanos Auditores</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#nosotros">Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#servicios" data-bs-toggle="dropdown">Servicios</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#auditoria-externa">Auditoría Externa</a></li>
-                            <li><a class="dropdown-item" href="#auditoria-interna">Auditoría Interna</a></li>
-                            <li><a class="dropdown-item" href="#consultoria">Consultoría</a></li>
-                            <li><a class="dropdown-item" href="#tributaria">Asesoría Tributaria</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#industrias">Industrias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn bg-gradiente-naranjo text-white ms-2" href="#contacto">Agenda una Consulta</a>
-                    </li>
-                </ul>
+    <!-- Header/Navigation -->
+    <header class="header-fixed">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/logo-llanos-auditores.png" alt="Llanos Auditores" class="logo">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#planes">Planes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="hero-section bg-gradient-primary text-white py-5">
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
+    <section id="inicio" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4 tipografia-hero">
-                        Auditoría, consultoría y asesoría contable 
-                        <br><span class="tipografia--gradiente">automatizadas en un solo lugar</span>
-                    </h1>
-                    <p class="lead mb-4">
-                        Más de <strong>15 años liderando el mercado de auditoría</strong>. 
-                        Vasta experiencia en servicios como <strong>auditoría externa, interna, consultoría tributaria 
-                        y asesoría contable integral</strong>. Puedes acceder a nuestros servicios digitales y reportes en línea 24/7
-                    </p>
-                    <a href="#contacto" class="btn btn-lg bg-gradiente-naranjo text-white">
-                        <i class="fas fa-calendar-alt me-2"></i>
-                        Agenda una Consulta
-                    </a>
+                    <div class="hero-content">
+                        <h1 class="hero-title">Expertos en asesoría</h1>
+                        <div class="typed-text">
+                            <h2 class="animated-text">
+                                <span class="typing-animation" data-words='["Contable", "Tributaria", "Auditorías", "Remuneraciones"]'></span>
+                            </h2>
+                        </div>
+                        <p class="hero-description">
+                            Más de 30 años de experiencia en el control financiero y tributario de tu negocio.
+                        </p>
+                        <a href="#planes" class="btn btn-primary btn-lg">Ver Planes Contables</a>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image">
-                        <img src="assets/hero-audit.jpg" alt="Servicios de Auditoría" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Logos -->
-    <section class="py-4 bg-light">
-        <div class="container">
-            <h6 class="text-center text-muted mb-4">Empresas que confían en nosotros</h6>
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-2 col-md-3 col-4 text-center mb-3">
-                    <img src="assets/client-1.png" alt="Cliente 1" class="img-fluid client-logo">
-                </div>
-                <div class="col-lg-2 col-md-3 col-4 text-center mb-3">
-                    <img src="assets/client-2.png" alt="Cliente 2" class="img-fluid client-logo">
-                </div>
-                <div class="col-lg-2 col-md-3 col-4 text-center mb-3">
-                    <img src="assets/client-3.png" alt="Cliente 3" class="img-fluid client-logo">
-                </div>
-                <div class="col-lg-2 col-md-3 col-4 text-center mb-3">
-                    <img src="assets/client-4.png" alt="Cliente 4" class="img-fluid client-logo">
-                </div>
-                <div class="col-lg-2 col-md-3 col-4 text-center mb-3">
-                    <img src="assets/client-5.png" alt="Cliente 5" class="img-fluid client-logo">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Model -->
-    <section class="py-5 modelo-section position-relative overflow-hidden" id="modelo">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold mb-3">
-                    <img src="assets/logo.svg" alt="Llanos Auditores" style="width: 40px; vertical-align: center;" class="me-2">
-                    Nuestro modelo
-                </h2>
-                <h3 class="text-primary">Mayor foco en actividades que generen valor al core-business</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h4 class="fw-bold mb-4">Nuestro modelo</h4>
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="text-center">
-                                <div class="icon-circle bg-primary text-white mb-3">
-                                    <i class="fas fa-users"></i>
-                                </div>
-                                <h5>Equipo Humano</h5>
-                                <p class="text-muted">Profesionales certificados con amplia experiencia</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="text-center">
-                                <div class="icon-circle bg-primary text-white mb-3">
-                                    <i class="fas fa-laptop-code"></i>
-                                </div>
-                                <h5>Tecnología Avanzada</h5>
-                                <p class="text-muted">Herramientas digitales de última generación</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="text-center">
-                                <div class="icon-circle bg-primary text-white mb-3">
-                                    <i class="fas fa-user-tie"></i>
-                                </div>
-                                <h5>Socio Asignado</h5>
-                                <p class="text-muted">Atención personalizada y directa</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="text-center">
-                                <div class="icon-circle bg-primary text-white mb-3">
-                                    <i class="fas fa-handshake"></i>
-                                </div>
-                                <h5>Alianzas Estratégicas</h5>
-                                <p class="text-muted">Red de partners especializados</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="text-primary mb-4">¿Qué logra tu empresa?</h3>
-                    <div class="benefits-list">
-                        <div class="benefit-item d-flex mb-3">
-                            <i class="fas fa-check-circle text-success me-3 mt-1"></i>
-                            <span>Alcanzar Mayores Niveles de Control y Transparencia</span>
-                        </div>
-                        <div class="benefit-item d-flex mb-3">
-                            <i class="fas fa-check-circle text-success me-3 mt-1"></i>
-                            <span>Cumplimiento Normativo Integral</span>
-                        </div>
-                        <div class="benefit-item d-flex mb-3">
-                            <i class="fas fa-check-circle text-success me-3 mt-1"></i>
-                            <span>Optimización de Procesos Contables</span>
-                        </div>
-                        <div class="benefit-item d-flex mb-3">
-                            <i class="fas fa-check-circle text-success me-3 mt-1"></i>
-                            <span>Reducción de Riesgos Operacionales</span>
-                        </div>
-                        <div class="benefit-item d-flex mb-3">
-                            <i class="fas fa-check-circle text-success me-3 mt-1"></i>
-                            <span>Reportes en Tiempo Real</span>
-                        </div>
-                    </div>
-                    <div class="mt-4 p-4 bg-light rounded">
-                        <h5>Nosotros</h5>
-                        <p class="mb-3">Somos una empresa <span class="tipografia--gradiente"><strong>con más de 15 años especializados</strong></span> en servicios de auditoría, consultoría contable y asesoría tributaria.</p>
-                        <a href="#nosotros" class="btn btn-outline-primary">Conócenos</a>
+                        <img src="assets/hero-auditores.png" alt="Llanos Auditores" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -189,112 +84,455 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-5 bg-light" id="servicios">
+    <section id="servicios" class="services-section py-5">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Nuestros Servicios</h2>
-                <p class="lead">Abordamos de manera integral los desafíos y las oportunidades que se nos presentan</p>
-            </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="service-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                        <div class="service-icon mb-3">
-                            <img src="https://via.placeholder.com/80x80/ff7300/ffffff?text=1" alt="Auditoría Externa" class="img-fluid">
-                        </div>
-                        <div class="service-number tipografia--gradiente">1.</div>
-                        <h5 class="mb-3">Auditoría Externa</h5>
-                        <p class="text-muted">Garantiza que tu empresa cumple con los más altos estándares de transparencia y control financiero. Auditorías independientes con metodologías internacionales.</p>
+                <div class="col-lg-4">
+                    <h2 class="section-title">Nuestros Servicios</h2>
+                    <h3 class="section-subtitle">Selecciona<br>el servicio que deseas cotizar</h3>
+                    <div class="service-arrow">
+                        <i class="fas fa-angle-double-right"></i>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="service-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                        <div class="service-icon mb-3">
-                            <img src="https://via.placeholder.com/80x80/ff7300/ffffff?text=2" alt="Auditoría Interna" class="img-fluid">
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-card">
+                                <div class="service-front">
+                                    <div class="service-icon">
+                                        <img src="assets/icon-contable.png" alt="Asesoría Contable">
+                                    </div>
+                                    <h4>Asesoría Contable</h4>
+                                </div>
+                                <div class="service-back">
+                                    <h4>Ver más</h4>
+                                    <a href="#contacto" class="service-link"></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="service-number tipografia--gradiente">2.</div>
-                        <h5 class="mb-3">Auditoría Interna</h5>
-                        <p class="text-muted">Evaluación continua de controles internos, identificación de riesgos operacionales y mejora de procesos para optimizar la gestión empresarial.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="service-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                        <div class="service-icon mb-3">
-                            <img src="https://via.placeholder.com/80x80/ff7300/ffffff?text=3" alt="Consultoría Tributaria" class="img-fluid">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-card">
+                                <div class="service-front">
+                                    <div class="service-icon">
+                                        <img src="assets/icon-tributaria.png" alt="Asesoría Tributaria">
+                                    </div>
+                                    <h4>Asesoría Tributaria</h4>
+                                </div>
+                                <div class="service-back">
+                                    <h4>Ver más</h4>
+                                    <a href="#contacto" class="service-link"></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="service-number tipografia--gradiente">3.</div>
-                        <h5 class="mb-3">Consultoría Tributaria</h5>
-                        <p class="text-muted">Asesoría especializada en planificación tributaria, cumplimiento normativo y optimización de la carga fiscal de tu empresa.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="service-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                        <div class="service-icon mb-3">
-                            <img src="https://via.placeholder.com/80x80/ff7300/ffffff?text=4" alt="Asesoría Contable" class="img-fluid">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-card">
+                                <div class="service-front">
+                                    <div class="service-icon">
+                                        <img src="assets/icon-remuneraciones.png" alt="Asesoría en Remuneraciones">
+                                    </div>
+                                    <h4>Asesoría en Remuneraciones</h4>
+                                </div>
+                                <div class="service-back">
+                                    <h4>Ver más</h4>
+                                    <a href="#contacto" class="service-link"></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="service-number tipografia--gradiente">4.</div>
-                        <h5 class="mb-3">Asesoría Contable</h5>
-                        <p class="text-muted">Servicios integrales de contabilidad, preparación de estados financieros y análisis de información para la toma de decisiones estratégicas.</p>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-card">
+                                <div class="service-front">
+                                    <div class="service-icon">
+                                        <img src="assets/icon-auditoria.png" alt="Auditoría Estados Financieros">
+                                    </div>
+                                    <h4>Auditoría Estados Financieros</h4>
+                                </div>
+                                <div class="service-back">
+                                    <h4>Ver más</h4>
+                                    <a href="#contacto" class="service-link"></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Industries Section -->
-    <section class="py-5" id="industrias">
+    <!-- About Section -->
+    <section id="nosotros" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-images">
+                        <div class="about-badge">
+                            <img src="assets/badge-quality.png" alt="Calidad" class="img-fluid">
+                        </div>
+                        <div class="about-main-image">
+                            <img src="assets/about-team.png" alt="Equipo Llanos Auditores" class="img-fluid">
+                        </div>
+                        <div class="experience-badge">
+                            <div class="experience-content">
+                                <i class="fas fa-star"></i>
+                                <h4>Más de 15 años de experiencia</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="section-title">Sobre Nosotros</h2>
+                        <h3 class="section-subtitle">Transparencia, Integridad y Expertise en Cada Servicio</h3>
+                        <p class="about-description">
+                            Nuestro equipo de contadores altamente calificados está aquí para ayudarte. 
+                            Ofrecemos un servicio personalizado de contabilidad general, diseñado para 
+                            mantener tus finanzas en orden y brindarte una visión clara de la salud 
+                            financiera de tu empresa.
+                        </p>
+                        <a href="#contacto" class="btn btn-outline-primary">
+                            <i class="fas fa-caret-right me-2"></i>
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clientes" class="clients-section py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold">Preferidos por empresas de todos los tamaños e industrias en Chile</h2>
+                <h2 class="section-title">Empresas que Confían en Nosotros</h2>
+                <h3 class="section-subtitle">Más de 200 empresas respaldan nuestro trabajo</h3>
             </div>
-            <div class="industry-tabs">
-                <ul class="nav nav-pills justify-content-center mb-4" id="industryTabs">
-                    <li class="nav-item">
-                        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#todos">Todos</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#retail">Retail</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#manufactura">Manufactura</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#servicios-tab">Servicios</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#inmobiliario">Inmobiliario</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tecnologia">Tecnología</button>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="todos">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="case-study bg-white p-4 rounded shadow-sm">
-                                    <img src="assets/case-1.jpg" alt="Caso de éxito 1" class="img-fluid rounded mb-3">
-                                    <h5>Empresa Retail</h5>
-                                    <p>Implementación de auditoría interna y mejora de controles financieros.</p>
+            
+            <div class="clients-logos">
+                <div class="row align-items-center justify-content-center g-4">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="client-logo">
+                            <img src="assets/client-logo-1.png" alt="Cliente 1" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="client-logo">
+                            <img src="assets/client-logo-2.png" alt="Cliente 2" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="client-logo">
+                            <img src="assets/client-logo-3.png" alt="Cliente 3" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="client-logo">
+                            <img src="assets/client-logo-4.png" alt="Cliente 4" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="client-logo">
+                            <img src="assets/client-logo-5.png" alt="Cliente 5" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="client-logo">
+                            <img src="assets/client-logo-6.png" alt="Cliente 6" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <p class="clients-description">
+                    Desde startups hasta grandes corporaciones, confiamos en brindar 
+                    servicios de contabilidad y auditoría de la más alta calidad.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="planes" class="plans-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Planes Mensuales</h2>
+                <h3 class="section-subtitle">Tenemos el plan perfecto para la contabilidad de tu empresa</h3>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Plan Emprende -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <p class="plan-category">Plan</p>
+                            <h4 class="plan-name">Emprende</h4>
+                            <div class="plan-price">$30.000<span>/mes</span></div>
+                            <p class="plan-description">Para empresas con ventas hasta $2.000.000</p>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Cálculo declaración de impuestos mensuales (Formulario 29)</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Confección mensual de registros contables exigidos por el SII</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Categorización registro de compraventa</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Asesoría y asistencia remota vía WhatsApp o mail</span>
+                            </div>
+                        </div>
+                        <div class="plan-button">
+                            <a href="#contacto" class="btn btn-primary w-100">Solicitar plan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan Microempresa -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <p class="plan-category">Plan</p>
+                            <h4 class="plan-name">Microempresa</h4>
+                            <div class="plan-price">$60.000<span>/mes</span></div>
+                            <p class="plan-description">Para empresas con ventas hasta $8.000.000</p>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Todo lo del plan Emprende</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Balance anual</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Declaraciones juradas de renta</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Confección de liquidaciones de sueldo (hasta 2 trabajadores)</span>
+                            </div>
+                        </div>
+                        <div class="plan-button">
+                            <a href="#contacto" class="btn btn-primary w-100">Solicitar plan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan Pyme -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="plan-card plan-featured">
+                        <div class="plan-header">
+                            <p class="plan-category">Plan</p>
+                            <h4 class="plan-name">Pyme</h4>
+                            <div class="plan-price">$150.000<span>/mes</span></div>
+                            <p class="plan-description">Para empresas con ventas hasta $11.000.000</p>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Todo lo del plan Microempresa</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Balance semestral y anual</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Formulario 22 (Renta empresa y socios)</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Confección de liquidaciones (hasta 4 trabajadores)</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Reuniones periódicas de coordinación</span>
+                            </div>
+                        </div>
+                        <div class="plan-button">
+                            <a href="#contacto" class="btn btn-primary w-100">Solicitar plan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan Empresa -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <p class="plan-category">Plan</p>
+                            <h4 class="plan-name">Empresa</h4>
+                            <div class="plan-price">A convenir</div>
+                            <p class="plan-description">Para empresas con ventas sobre $11.000.000</p>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Todo lo del plan Pyme</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Balance mensual, semestral y anual</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Estados de resultados personalizados</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Liquidaciones ilimitadas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Informes adicionales acordados</span>
+                            </div>
+                        </div>
+                        <div class="plan-button">
+                            <a href="#contacto" class="btn btn-primary w-100">Solicitar plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Beneficios</h2>
+                    <h3 class="section-subtitle">¿Por qué elegir trabajar con nosotros?</h3>
+                    <a href="#contacto" class="btn btn-success">
+                        <i class="fab fa-whatsapp me-2"></i>
+                        Conversemos
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-check-double"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Más de 20 años de experiencia</h4>
+                                <p>Nuestro equipo conoce a fondo las regulaciones contables y tributarias específicas en Chile.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-check-double"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Precisión y confidencialidad</h4>
+                                <p>Trabajamos con meticulosidad y tratamos tu información financiera con la máxima confidencialidad.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-check-double"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Ahorro de tiempo y recursos</h4>
+                                <p>Deja la carga de la contabilidad en nuestras manos y enfócate en hacer crecer tu negocio.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-check-double"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Asesoramiento personalizado</h4>
+                                <p>Te ofrecemos un asesoramiento personalizado y soluciones a medida para tus objetivos específicos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h2 class="section-title">Contáctanos</h2>
+                        <h3 class="section-subtitle">¡No pierdas más tiempo lidiando con la contabilidad de tu empresa!</h3>
+                        <p class="contact-description">
+                            Descubre cómo nuestros servicios de Contabilidad General pueden impulsar el éxito de tu negocio. ¡Contáctanos hoy mismo!
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h5>contacto@llanosauditores.cl</h5>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="case-study bg-white p-4 rounded shadow-sm">
-                                    <img src="assets/case-2.jpg" alt="Caso de éxito 2" class="img-fluid rounded mb-3">
-                                    <h5>Empresa Manufacturera</h5>
-                                    <p>Optimización de procesos contables y cumplimiento tributario.</p>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h5>+569 1234 5678</h5>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="case-study bg-white p-4 rounded shadow-sm">
-                                    <img src="assets/case-3.jpg" alt="Caso de éxito 3" class="img-fluid rounded mb-3">
-                                    <h5>Empresa de Servicios</h5>
-                                    <p>Auditoría externa y reestructuración financiera exitosa.</p>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h5>Av. Providencia 123, Of. 456, Santiago - Chile</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center mt-4">
-                            <a href="#" class="btn btn-primary">Ver casos de éxito</a>
-                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Número de teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="empresa" class="form-label">Nombre de la empresa</label>
+                                <input type="text" class="form-control" id="empresa" name="empresa">
+                            </div>
+                            <div class="mb-3">
+                                <label for="plan" class="form-label">¿Qué plan desea cotizar?</label>
+                                <select class="form-select" id="plan" name="plan">
+                                    <option value="emprende">Plan Emprende</option>
+                                    <option value="microempresa">Plan Microempresa</option>
+                                    <option value="pyme">Plan Pyme</option>
+                                    <option value="empresa">Plan Empresa</option>
+                                    <option value="personalizado">Plan Personalizado</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Solicitar Cotización</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -302,152 +540,164 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-5 bg-light">
+    <section class="testimonials-section py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <blockquote class="blockquote text-center">
-                                    <p class="mb-4">"Debo destacar el nivel de soporte y profesionalismo que hemos recibido por parte del equipo de Llanos Auditores. Demuestran un alto nivel de compromiso y entendimiento de nuestras necesidades particulares. Hemos logrado un significativo avance en el control y transparencia de nuestros procesos financieros."</p>
-                                    <footer class="blockquote-footer">
-                                        <strong>María González</strong><br>
-                                        <small>Directora Financiera - TechCorp</small>
-                                    </footer>
-                                </blockquote>
+            <div class="text-center mb-5">
+                <h2 class="section-title">Testimonios</h2>
+                <h3 class="section-subtitle">Ellos han confiado en nosotros</h3>
+            </div>
+            
+            <div class="testimonials-carousel">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="assets/testimonial-1.png" alt="Cliente 1">
                             </div>
-                            <div class="carousel-item">
-                                <blockquote class="blockquote text-center">
-                                    <p class="mb-4">"Llanos Auditores ha sido un gran apoyo para nuestra empresa, brindándonos desde el año 2018 un servicio de calidad y oportuno, con un equipo comprometido que nos ha acompañado en cada proceso de mejora. Su gestión en auditoría y consultoría tributaria los ha convertido en un socio estratégico fundamental."</p>
-                                    <footer class="blockquote-footer">
-                                        <strong>Carlos Mendoza</strong><br>
-                                        <small>Gerente General - InnovaPlus</small>
-                                    </footer>
-                                </blockquote>
-                            </div>
-                            <div class="carousel-item">
-                                <blockquote class="blockquote text-center">
-                                    <p class="mb-4">"Junto a Llanos Auditores logramos optimizar nuestros procesos de forma eficaz y eficiente. No solo nos dieron servicios de auditoría... nos dieron tranquilidad para ocuparnos de nuestro negocio principal. Reconocemos el aporte fundamental de su equipo en nuestro éxito empresarial."</p>
-                                    <footer class="blockquote-footer">
-                                        <strong>Ana Rodríguez</strong><br>
-                                        <small>CEO - GrowthSolutions</small>
-                                    </footer>
-                                </blockquote>
+                            <div class="testimonial-info">
+                                <h5>María González</h5>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
+                        <p class="testimonial-text">
+                            "Sobre todas las cosas lo que más me gusta es el equipo humano y la personalización del servicio que ofrece Llanos Auditores. Con ellos encontramos un partner en el tema de contabilidad."
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="assets/testimonial-2.png" alt="Cliente 2">
+                            </div>
+                            <div class="testimonial-info">
+                                <h5>Carlos Mendoza</h5>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "Llanos Auditores ha sido un apoyo en la conformación y gestión de mi empresa, tanto por el apoyo técnico y orientación en la gestión legal, además cuentan con precios acorde a mi necesidad."
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-5 bg-primary text-white">
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="text-center mb-5">
+                <h2 class="section-title">FAQ</h2>
+                <h3 class="section-subtitle">Preguntas frecuentes</h3>
+            </div>
+            
+            <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h2 class="fw-bold mb-3">Agenda tu consulta gratuita con nosotros</h2>
-                    <p class="lead mb-0">SERVICIOS QUE SE ADAPTAN A TUS NECESIDADES</p>
-                </div>
-                <div class="col-lg-4 text-end">
-                    <a href="#contacto" class="btn btn-warning btn-lg">Contáctanos</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Demo Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="fw-bold mb-4">¿Necesitas conocer cómo trabajamos?</h2>
-                    <p class="lead mb-4">Conoce en detalle nuestros servicios de auditoría y aclara cualquier duda que puedas tener junto a nuestro equipo.</p>
-                    <p class="mb-4"><strong>Consulta inicial gratuita, 30 min.</strong></p>
-                    <a href="#contacto" class="btn btn-primary btn-lg">Agendar Consulta</a>
-                </div>
-                <div class="col-lg-6">
-                    <img src="assets/demo-image.jpg" alt="Consulta gratuita" class="img-fluid rounded">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="py-5 bg-dark text-white" id="contacto">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <h2 class="fw-bold mb-4">¿CONVERSEMOS?</h2>
-                    <div class="contact-info mb-4">
-                        <p class="mb-2">
-                            <i class="fas fa-phone me-2"></i>
-                            <a href="tel:+56226641300" class="text-white">+56 2 2664 1300</a>
-                        </p>
-                        <p class="mb-2">
-                            <i class="fas fa-envelope me-2"></i>
-                            <a href="mailto:info@llanosauditores.cl" class="text-white">info@llanosauditores.cl</a>
-                        </p>
-                        <p class="mb-2">
-                            <i class="fas fa-map-marker-alt me-2"></i>
-                            Av. Providencia 1208, Of. 2003<br>
-                            Providencia, Santiago
-                        </p>
-                        <div class="social-links mt-3">
-                            <a href="#" class="text-white me-3">
-                                <i class="fab fa-linkedin fa-2x"></i>
-                            </a>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    ¿Por qué son importantes los servicios de contabilidad?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    El servicio de contabilidad consiste en registrar todas las transacciones financieras de una empresa como son las ventas, compras, ingresos y egresos permitiendo cumplir con las obligaciones tributarias mensuales y anuales de cada contribuyente evitando multas y recargos.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    ¿A quiénes van dirigidos nuestros planes?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nuestros planes están dirigidos a emprendedores, pymes y empresas en general que no cuenten con un apoyo contable, tributario y en recursos humanos para el cumplimiento de sus obligaciones tributarias mensuales o anuales.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    ¿Qué obligaciones tributarias debe cumplir mensualmente una Pyme?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Los emprendedores y pymes deben realizar mensualmente la declaración y pago de impuesto, formulario F-29 en donde deben ser retenidos y enterados en arcas fiscales, por ejemplo el impuesto al valor agregado (IVA), pagos provisionales mensuales obligatorios (PPM), impuesto único de los trabajadores, impuesto retención honorarios, entre otros.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    ¿Puedo terminar el plan contable en cualquier momento?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, dando aviso con 30 días de anticipación, en cualquier fecha del año.
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">Envíanos tu mensaje</h3>
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Nombre *" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Correo electrónico *" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Mensaje *" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-warning">Enviar</button>
-                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="d-flex align-items-center mb-3 mb-lg-0">
-                        <img src="assets/logo.svg" alt="Llanos Auditores" height="30" class="me-2">
-                        <span class="fw-bold">Llanos Auditores</span>
+                <div class="col-md-6">
+                    <img src="assets/logo-llanos-auditores-white.png" alt="Llanos Auditores" class="footer-logo">
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
-                    <p class="mb-0">Soluciones definitivas de auditoría y consultoría contable</p>
                 </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a href="#" class="text-white me-3">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <p class="mb-0 mt-2">Todos los derechos reservados. Llanos Auditores 2024</p>
-                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p>&copy; 2024 Llanos Auditores. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
+
 </html>
