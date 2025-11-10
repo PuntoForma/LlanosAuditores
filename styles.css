@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar {
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
 }
 
 .navbar-brand .logo {
@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding-top: 60px;
+    padding-top: 45px;
 }
 
 .hero-background {
@@ -142,7 +142,6 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     bottom: 0;
     background-image: url('assets/imagen01.jpg');
-    background-color: #4f46e5;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(248, 250, 252, 0.4) 100%);
+    background: rgba(255, 255, 255, 0.3);
     z-index: 1;
 }
 
@@ -229,12 +228,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Services Section */
 .services-section {
     background-color: var(--light-color);
-}
-
-.service-arrow {
-    font-size: 2rem;
-    color: var(--accent-color);
-    margin-top: 2rem;
 }
 
 .service-card {
@@ -911,11 +904,11 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .navbar {
-        padding: 0.25rem 0;
+        padding: 0.15rem 0;
     }
     
     .navbar-nav .nav-link {
-        margin: 0.5rem 0;
+        margin: 0.25rem 0;
     }
     
     .navbar-brand .logo {

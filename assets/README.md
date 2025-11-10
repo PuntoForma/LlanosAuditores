@@ -22,6 +22,7 @@ Esta carpeta contiene todas las imágenes y recursos necesarios para el sitio we
 - `icon-tributaria.png` - Icono servicio tributario
 - `icon-remuneraciones.png` - Icono servicio remuneraciones  
 - `icon-auditoria.png` - Icono servicio auditoría
+- `icon-consultoria.png` - Icono consultoría empresarial
 
 ### Client Logos
 - `client-logo-1.png` - Logo empresa cliente 1
