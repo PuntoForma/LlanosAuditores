@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize all functionality
     initNavigation();
-    initTypingAnimation();
+    // initTypingAnimation(); // Removed - using static list instead
     initScrollAnimations();
     initContactForm();
     initTestimonialCarousel();
