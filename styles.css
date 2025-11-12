@@ -163,12 +163,14 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: 2;
     color: var(--text-grafito);
+    text-align: center;
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: var(--font-weight-bold);
-    margin-bottom: 1rem;
+    /* Removed large negative margin to position services list lower */
+    margin-bottom: 1.5rem;
     animation: fadeInUp 1s ease;
     line-height: 1.2;
 }
@@ -176,17 +178,19 @@ h1, h2, h3, h4, h5, h6 {
 .services-list {
     list-style: none;
     padding: 0;
-    margin: 0.5rem 0 1rem 0;
-    font-size: 1.3rem;
+    margin: 1rem 0 1.5rem 0;
+    font-size: 1.5rem;
     font-weight: var(--font-weight-semibold);
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .services-list li {
     position: relative;
-    padding-left: 1.8rem;
-    margin-bottom: 0.3rem;
+    padding-left: 2rem;
+    margin-bottom: 0.4rem;
     animation: fadeInUp 1s ease 0.2s both;
+    text-align: left;
+    display: inline-block;
 }
 
 .services-list li::before {
@@ -195,16 +199,16 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     color: var(--primary-color);
     font-weight: var(--font-weight-bold);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .hero-description {
-    font-size: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    margin-top: 2.7rem;
+    margin-bottom: 2.7rem;
     opacity: 0.9;
     animation: fadeInUp 1s ease 0.3s both;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .hero-image {
@@ -667,8 +671,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-lg {
-    padding: 1rem 2.5rem;
-    font-size: 1.1rem;
+    padding: 0.65rem 1.8rem;
+    font-size: 0.95rem;
 }
 
 /* Responsive Design */
@@ -682,27 +686,20 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero-title {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
     }
     
     .services-list {
-        font-size: 1.15rem;
-        margin: 0.4rem 0 0.8rem 0;
+        font-size: 1.3rem;
+        margin: 0.8rem 0 1.2rem 0;
     }
     
     .services-list li {
-        margin-bottom: 0.25rem;
-        padding-left: 1.6rem;
-    }
-    
-    .services-list li::before {
-        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
     }
     
     .hero-description {
-        font-size: 0.95rem;
-        margin-top: 0.8rem;
-        margin-bottom: 1.5rem;
+        font-size: 1rem;
     }
     
     .hero-section {
@@ -752,27 +749,25 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 576px) {
     .hero-title {
-        font-size: 1.9rem;
+        font-size: 2.2rem;
     }
     
     .services-list {
-        font-size: 1rem;
-        margin: 0.3rem 0 0.7rem 0;
+        font-size: 1.1rem;
+        margin: 0.6rem 0 1rem 0;
     }
     
     .services-list li {
-        margin-bottom: 0.2rem;
-        padding-left: 1.4rem;
+        margin-bottom: 0.25rem;
+        padding-left: 1.5rem;
     }
     
     .services-list li::before {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     
     .hero-description {
-        font-size: 0.9rem;
-        margin-top: 0.7rem;
-        margin-bottom: 1.3rem;
+        font-size: 0.95rem;
     }
     
     .contact-form {
