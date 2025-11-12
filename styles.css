@@ -5,20 +5,25 @@
 
 /* CSS Variables */
 :root {
-    --primary-color: #4135C3;
-    --secondary-color: #74a3ff;
-    --accent-color: #e8d7f9;
+    --primary-color: #051926;
+    --primary-night-blue: #051926;
+    --secondary-color: #A0C8F3;
+    --secondary-celest-blue: #A0C8F3;
+    --secondary-electric-blue: #3EB9FF;
+    --secondary-dark-blue: #051926;
+    --accent-color: #3EB9FF;
     --success-color: #10b981;
-    --dark-color: #3e3183;
+    --dark-color: #051926;
     --light-color: #f8fafc;
-    --white: #ffffff;
-    --text-dark: #374151;
+    --white: #FFFFFF;
+    --support-ice-white: #E8EBF1;
+    --text-dark: #051926;
     --text-light: #6b7280;
     --text-grafito: #4a4a4a;
     --border-light: #e5e7eb;
     
-    --gradient-primary: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-    --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);  
+    --gradient-primary: linear-gradient(135deg, #051926 0%, #3EB9FF 100%);
+    --gradient-accent: linear-gradient(135deg, #3EB9FF 0%, #A0C8F3 100%);  
     --font-primary: 'Montserrat', sans-serif;
     --font-weight-light: 300;
     --font-weight-regular: 400;
